@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="article">
+
+
+        <section id="the-supervisionary-proof-checking-kernel-or-a-work-in-progress-toward-proof-generating-code" class="top-line-flush" style="text-align: center;">
+    <h2 class="top-line-flush">The Supervisionary proof-checking kernel, or: a work-in-progress toward proof-generating code</h2>
+    <p><a href="https://popl22.sigplan.org/home/prisc-2022">PriSC 2022</a> at <a href="https://popl22.sigplan.org/">POPL 2022</a></p>
+    <p><em>Dominic P. Mulligan and Nick Spinale</em></p>
+    <p><a href="./supervisionary-prisc2022.pdf">[extended abstract]</a></p>
+    </section>
+    <h3 id="abstract">Abstract</h3>
+    <!-- _Abstract._ -->
+    <p>Interactive theorem proving software is typically designed around a trusted proof-checking kernel, the sole system component capable of authenticating theorems. Untrusted automation procedures reside outside of the kernel, and drive it to deduce new theorems via an API. Kernel and untrusted automation are typically implemented in the same programming language—the “meta-language”—usually some functional programming language in the ML family. This strategy—introduced by Milner in his LCF proof assistant—is a reliability mechanism, aiming to ensure that any purported theorem produced by the system is indeed entailed by the theory within the logic.</p>
+    <p>Changing tack, operating systems are also typically designed around a trusted kernel, a privileged component responsible for—amongst other things—mediating interaction betwixt user-space software and hardware. Untrusted processes interact with the system by issuing kernel system calls across a hardware privilege boundary. In this way, the operating system kernel supervises user-space processes.</p>
+    <p>Though ostensibly very different, squinting, we see that the two kinds of kernel are tasked with solving the same task: enforcing system invariants in the face of unbounded interaction with untrusted code. Yet, the two solutions to solving this problem, employed by the respective kinds of kernel, are very different.</p>
+    <p>In this abstract, we explore designing proof-checking kernels as supervisory software, where separation between kernel and untrusted code is enforced by privilege, not programming language module boundaries and type abstraction. We describe work on the Supervisionary proof-checking kernel, and briefly sketch its unique system interface. We then describe some potential uses of the Supervisionary kernel.</p>
+    
+    
+    
+                </div>
+</body>
+</html>

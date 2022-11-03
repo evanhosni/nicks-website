@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Spinale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body-index">
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////HEADER////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <header>
+        <nav id="nav-links">
+            <p id="link-home" class="nav-link">Home</p>
+            <p id="link-about" class="nav-link">About</p>
+            <p id="link-blog" class="nav-link">Blog</p>
+            <p id="link-contact" class="nav-link">Contact</p>
+        </nav>
+    </header>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////MAIN//////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <main>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="section hidden" id="home">
+            <div class="blurb-container">
+                <div class="blurb">
+                    <h1>Hi, I'm Nick.</h1>
+                    <p>I am an independent computer security researcher based in Portland, Oregon.</p>
+                    <p>My interests include privacy, confidential computing, trusted execution environments, operating systems, programming languages, formal methods, and reverse engineering.</p>
+                    <p>I offer my consulting services through <a href="https://coliasgroup.com">Colias Group, LLC</a>.</p>
+                </div>
+            </div>
+        </div>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="section hidden" id="about">
+
+            <div class="blurb-container">
+                <div class="blurb">
+                    <h1>Here's some stuff</h1>
+                    <p>Here's a fucking paragraph</p>
+                    <p><a target="_blank" href="./assets/resume.pdf">Resume (pdf)</a></p>
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <div class="content">
+
+                    <h2>Papers and talks</h2>
+
+                    <p>
+                        <strong><span class="a" href="talks/prisc2022.html">The Supervisionary proof-checking kernel</span></strong><br>
+                        Workshop on Principles of Secure Compilation (PriSC), POPL 2022<br>
+                        <em>Dominic P. Mulligan and Nick Spinale</em>
+                    </p>
+                    
+                    <p>
+                        <strong><span class="a" href="papers/seed2021.html">Confidential Computing—a brave new world</span></strong><br>
+                        IEEE International Symposium on Secure and Private Execution Environment Design<br>
+                        <em>Dominic P. Mulligan, Gustavo Petri, Nick Spinale, Gareth Stockwell and Hugo J. M. Vincent</em>
+                    </p>
+                    
+                    <p>
+                        <strong><span class="a" href="talks/sel4-summit-2020.html">seL4 + TrustZone: Spanning both worlds</span></strong><br>
+                        seL4 Summit 2020<br>
+                        <em>Nick Spinale</em>
+                    </p>
+                    
+                    <p>
+                        <strong><span class="a" href="papers/newly-reducible-polynomial-iterates.html">Newly reducible polynomial iterates</span></strong><br>
+                        International Journal of Number Theory<br>
+                        <em>Peter Illig, Rafe Jones, Eli Orvis, Yukihiko Segawa, Nick Spinale</em>
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Selected open source activity</h2>
+
+                    <p>
+                        <strong><a href="https://gitlab.com/coliasgroup/icecap/icecap">IceCap</a></strong>
+                        - At Arm Research, I started and led the IceCap project.
+                        IceCap is a hypervisor with a minimal trusted computing base which serves as a research vehicle for virtualization-based confidential computing.
+                        The <a href="https://gitlab.com/coliasgroup/icecap/icecap/-/tree/coliasgroup/examples#tutorial">IceCap Framework</a>, a byproduct of the IceCap Hypervisor, is a collection of tools and librarys for constructing seL4-based systems with CapDL and Rust.
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://ts.data61.csiro.au/projects/seL4/">seL4</a></strong>
+                        - I am a contributor to seL4, the formally verified microkernel.
+                        My contributions span <a href="https://github.com/seL4/seL4">the kernel itself</a> and <a href="https://github.com/seL4/capdl">CapDL</a>.
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://github.com/nspin/nix-isabelle">Isabelle + Nix</a></strong>
+                        - The Isabelle developers suggested that trying to repackage, let alone port, Isabelle would be insane:
+                        <a href="https://mailman46.in.tum.de/pipermail/isabelle-dev/2019-June/016943.html">[1]</a>
+                        <a href="https://mailman46.in.tum.de/pipermail/isabelle-dev/2019-June/016945.html">[2]</a>.
+                        Nix provides a realistic and satisfying means to such a port.
+                        To prove it, I've used Nix to port Isabelle to Arm.
+                        This port has just recently become relevant due to the MacOS transition to
+                        Arm.
+                    </p>
+
+                    <p>
+                        <strong><a href="https://github.com/nixos/nixpkgs">Nixpkgs</a></strong>
+                        - I am a contributor to the Nix packages collection.
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Selected professional experience</h2>
+                    
+                    <p>
+                        <strong><a href="https://coliasgroup.com/">Colias Group, LLC</a></strong> | Principle Researcher and Consultant<br>
+                        <em>August 2022 – Present | Portland, OR</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://www.arm.com/resources/research/">Arm Research</a></strong> | Senior Research Engineer<br>
+                        <em>October 2018 – February 2022 | Cambridge, UK</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://duckduckgo.com/?q=google">Google</a></strong> | Software Engineering Intern<br>
+                        <em>June – September 2017 | Mountain View, CA</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://carvesystems.com/">Carve Systems, LLC</a></strong> | HackNY Fellow + Intern<br>
+                        <em>June – December 2016 | New York, NY</em>
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Education</h2>
+                    
+                    <p>
+                    <strong><a href="https://www.carleton.edu/">Carleton College</a></strong> | Mathematics and Computer Science<br>
+                    <em>Sep 2014 – June 2018 | Northfield, MN</em>
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Honors</h2>
+                    
+                    <p>
+                        <strong><a href="https://www.carleton.edu/computer-science/major/awards/pollatsek/">David Pollatsek Prize in Computer Science</a></strong><br>
+                        2018 – <em>Carleton College</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://www.carleton.edu/phi-beta-kappa/">Phi Beta Kappa</a></strong><br>
+                        2018 – <em>Carleton College</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://hackny.org/about">HackNY Fellow</a></strong><br>
+                        2016 – <em>hackNY</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://en.wikipedia.org/wiki/Presidential_Scholars_Program">United States Presidential Scholar</a></strong><br>
+                        2014 – <em>United States Department of Education</em>
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Academic services</h2>
+                    
+                    <p>
+                        <strong>seL4 Summit 2022 - </strong>
+                        <em>[Program committee]</em>
+                    </p>
+                    
+                    <p>
+                        <strong>Arm Research Summit 2020 - </strong>
+                        <em>[Session chair]</em><br>
+                        Morello: Investigating hardware capabilities in the Arm architecture – <em>Richard Grisenthwaite (Chief Architect at Arm), Robert Watson (University of Cambridge), and Peter Sewell (University of Cambridge)</em>
+                    </p>
+
+                    <hr> <!---->
+                    
+                    <h2>Selected independent projects</h2>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/hs-arm">hs-arm</a> - ARM (dis)assembler and analyzer Haskell library generated from the machine-readable ARMv8.3-A specification.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/malice">Malice</a> - Haskell framework that provides abstractions and protocol-specific attacks for intercepting and modifying network traffic. It leverages the power of Haskell’s type system to define an embedded DSL for describing the actions of Eve and Mallory. In effect, it allows a person in the middle to write code that is as close to pure evil as possible.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/pyxendbg">pyxendbg</a> - GDB server for virtual machine introspection under Xen. Inspired by <a href="https://github.com/nccgroup/xendbg">xendbg</a>, but with Arm in mind. Designed for debugging paravirtutalized unikernel guests.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/regl">regl</a> - Haskell library for applicative-style regular expressions.
+                        Features uncommon yet useful primitives such as regular expression complement and disjunction.
+                        Based on regular expression derivatives.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/kgo">kgo</a> - <code>kexec</code> implemented in pure Go, with some extra flexibility. Designed to boot a type-1 hypervisor such as Xen or Hafnium, with <a href="https://www.linuxboot.org">LinuxBoot</a> in mind.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/nspin/routor">routor</a> - Tor controller that allows circuit paths to be chosen on a stream-by-stream basis.
+                    </p>
+                    
+                    <p>
+                        <a href="articles/pure-x11-logic-in-haskell.html">wmonad</a> - A set of Haskell libraries encapsulating interaction with the X11 server, enabling the expression of pure X11 logic.
+                    </p>
+                    
+                    <hr> <!---->
+                    
+                    <h2>Patents</h2>
+                    
+                    <p>
+                        <strong><a href="https://patents.google.com/patent/US20220124074A1">US 17/076,112</a></strong><br>
+                        Method and apparatus for encrypted communication<br>
+                        <em>Gustavo Federico Petri, Guilhem Floreal Bryant, Nicholas Costas Spinale</em>
+                    </p>
+                    
+                    <p>
+                        <strong><a href="https://patents.google.com/patent/GB2600116A">GB2016674.0A</a></strong><br>
+                        Methods and apparatus for communication between processing circuitry and a peripheral device<br>
+                        <em>Gustavo Federico Petri, Guilhem Floréal Bryant, Nicholas Costas Spinale, Dominic Phillip Mulligan</em>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="section hidden" id="blog">
+            <div class="blurb-container">
+                <div class="blurb">
+                    <h1>Here's some stuff</h1>
+                    <p>Here's a fucking paragraph</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="content">
+                
+                    <h2 class="article-title no-margin-bottom">
+                        <span class="a" href="articles/an-elegant-method-for-solving-the-rubiks-cube.html">An Elegant Method for Solving the Rubik's Cube</span>
+                    </h2>
+                    <span class="small-text">2022, Jun 8</span>
+                    <p>I present a new method based on the idea of reducing the cube to states which can be solved with increasingly limited sets of turns. This method has the interesting property of ending with intuitive blockbuilding.</p>
+                    <span class="a" class="small-text" href="articles/an-elegant-method-for-solving-the-rubiks-cube.html">read more</span>
+
+                    <hr>
+                
+                    <h2 class="article-title no-margin-bottom">
+                        <span class="a" href="articles/solving-the-rubiks-cube-blindfolded.html">Solving the Rubik's Cube Blindfolded</span>
+                    </h2>
+                    <span class="small-text">2018, Feb 2</span>
+                    <p>All that’s necessary for solving the cube blindfolded is a solid understanding of the basic properties of the cube and some practice. This article provides an in-depth explanation of one common strategy for solving the cube blindfolded. It doesn’t assume any knowledge of cube theory, but the reader will find some undergraduate math (e.g.&nbsp;basic group theory) useful.</p>
+                    <span class="a" class="small-text" href="articles/solving-the-rubiks-cube-blindfolded.html">read more</span>
+
+                    <hr>
+                
+                    <h2 class="article-title no-margin-bottom">
+                        <span class="a" href="articles/pure-x11-logic-in-haskell.html">Pure X11 Logic in Haskell</span>
+                    </h2>
+                    <span class="small-text">2016, Jul 22</span>
+                    <p>X11 programming in Haskell has traditionally been done using the <a href="https://hackage.haskell.org/package/X11-1.6.1.2">X11 package</a>. Many of these bindings were written by hand and, due to their reliance on FFI, are susceptible to some threading issues. <a href="https://hackage.haskell.org/package/xhb">xhb</a>, a newer package, provides low-level bindings to X11 based on the same XML as <a href="https://xcb.freedesktop.org/">xcb</a>. I present a new set of libraries which serve as layers of abstraction over the low-level xhb bindings. These libraries encapsulate interaction with the X server in a monad transformer, enabling the expression of pure X logic.</p>
+                    <span class="a" class="small-text" href="articles/pure-x11-logic-in-haskell.html">read more</span>
+
+                </div>
+            </div>
+        </div>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <div class="section hidden" id="contact">
+            <div class="blurb-container">
+                <div class="blurb">
+                    <h1>Contact me.</h1>
+                    <a target="_blank" href="mailto:nick@nickspinale.com">
+                        <p><i class="fa fa-envelope"></i>&nbsp;&nbsp; nick@nickspinale.com</p>
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://github.com/nspin">
+                        <p><i class="fa fa-github"></i>&nbsp;&nbsp; github.com/nspin</p>
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://twitter.com/nick_spinale">
+                        <p><i class="fa fa-twitter"></i>&nbsp;&nbsp; twitter.com/nick_spinale</p>
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/nickspinale">
+                        <p><i class="fa fa-linkedin"></i>&nbsp;&nbsp; linkedin.com/in/nickspinale</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    </main>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////MODALS////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="modal">
+        <div id="iframe-container">
+            <span id="close">X</span>
+            <iframe id="iframe" src=""></iframe>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
