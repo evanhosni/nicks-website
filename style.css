@@ -99,7 +99,7 @@ header p:hover {
     max-width: 700px;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px 4%;
     user-select: none;
     font-size: 1.2em;
 }
@@ -209,7 +209,7 @@ header p:hover {
     .blurb {
         margin-left: -2vw;
     }
-    #iframe {
+    #iframe-container {
         width: 90%;
     }
 }
@@ -246,7 +246,7 @@ header p:hover {
         backdrop-filter: none;
     }
 
-    #iframe {
+    #iframe-container {
         width: 95%;
     }
 }
