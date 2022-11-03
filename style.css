@@ -167,6 +167,7 @@ header p:hover {
     padding: 5px 10px;
     position: absolute;
     user-select: none;
+    font-size: 1.5em;
     font-weight: 800;
 }
 #close:hover {
