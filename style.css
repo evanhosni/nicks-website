@@ -16,6 +16,10 @@
     width: 12px;
 }
 
+*::-webkit-scrollbar-track {
+    background: #000;
+}
+
 *::-webkit-scrollbar-thumb {
     background-color: #333333;
     border-radius: 10px;
@@ -60,6 +64,7 @@ hr {
 body {
     background-color: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #body-index {
@@ -119,6 +124,7 @@ header p:hover {
     width: calc(50% + 5vw - 5vh);
     margin-top: 10vw;
     margin-left: auto;
+    animation: fadeIn 2s;
 }
 .blurb {
     margin-left: -5vw;
@@ -127,14 +133,16 @@ header p:hover {
     box-shadow: rgba(0,0,0,.8) 0 0 50px;
 }
 .content-container {
+    position: absolute;
+    top: 80vh;
     width: 80vw;
-    margin-top: 30vh;
     margin-left: -10vw;
     margin-bottom: -100px;
     padding: 50px 10vw;
     background-color: rgba(0,0,0,.8);
     box-shadow: rgba(0,0,0,.8) 0 0 50px;
     backdrop-filter: blur(15px);
+    animation: fadeInDelayed 2.5s;
 }
 .content {
     margin: auto;
@@ -163,14 +171,25 @@ header p:hover {
     width: 80%;
     height: 85%;
 }
-#close {
-    padding: 5px 10px;
+#icons {
+    margin: 5px 8px;
     position: absolute;
     user-select: none;
-    font-size: 1.5em;
-    font-weight: 800;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 10px;
+}
+#close {
+    padding: 5px 8px;
 }
 #close:hover {
+    cursor: pointer;
+    color: var(--orangeHover);
+}
+#newtab {
+    padding: 5px 8px;
+}
+#newtab:hover {
     cursor: pointer;
     color: var(--orangeHover);
 }
@@ -188,7 +207,7 @@ header p:hover {
     overflow-x: hidden;
 }
 
-/*/////////////////////////////////////////////////////////*/
+/*/////////////////////////MEDIA QUERIES////////////////////////////*/
 @media (max-width: 1150px) {
     #body-index {
         background-size: 90% auto;
@@ -240,7 +259,8 @@ header p:hover {
     }
 
     .content-container {
-        margin-top: 5vh;
+        position: static;
+        margin-top: 4vh;
         background-color: transparent;
         box-shadow: none;
         backdrop-filter: none;
@@ -249,10 +269,38 @@ header p:hover {
     #iframe-container {
         width: 95%;
     }
+
+    #icons {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 360px) {
     body {
         font-size: .7em;
+    }
+}
+
+/*/////////////////////////ANIMATIONS////////////////////////////*/
+@keyframes fadeIn { 
+    0% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInDelayed { 
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

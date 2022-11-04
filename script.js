@@ -26,9 +26,6 @@ function showContent(e) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.querySelector("#link-" + e.id).classList.add("active")
     e.classList.remove("hidden")
-    var blurb = e.querySelector(".blurb-container")
-    var content = e.querySelector(".content-container")
-    blurb.style.opacity = "1"
 }
 
 showContent(document.querySelector("#home"))
@@ -40,6 +37,8 @@ var body = document.querySelector('#body-index')
 var articleLinks = document.querySelectorAll(".a")
 var iframe = document.querySelector('#iframe')
 var modal = document.querySelector('#modal')
+var closeX = document.querySelector('#close')
+var newtab = document.querySelector('#newtab')
 
 articleLinks.forEach(articleLink => {
     articleLink.addEventListener('click', (e) => {
@@ -50,9 +49,16 @@ articleLinks.forEach(articleLink => {
     })
 })
 
-modal.addEventListener('click', hideModal)
+modal.addEventListener('click', (e) => {
+    if (e.target.id !== "icons") hideModal()
+})
+closeX.addEventListener('click', hideModal)
 
 function hideModal() {
     modal.style.display = "none"
     body.style.overflow = "visible"
 }
+
+newtab.addEventListener('click', () => {
+    window.open(window.location.hostname + iframe.src.substring(1), '_blank')
+})
