@@ -60,5 +60,5 @@ function hideModal() {
 }
 
 newtab.addEventListener('click', () => {
-    window.open(window.location.hostname + iframe.src.substring(1), '_blank')
+    window.open(iframe.src, '_blank')
 })
